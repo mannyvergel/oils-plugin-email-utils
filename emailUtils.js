@@ -6,7 +6,6 @@ const defaultConf = require('./emailUtilsDefaultConf.js');
 exports.email = async function({
   to, fr, subj, body, cc, bcc, conf
 }) {
-
   if (cc || bcc) {
     console.warn("cc bcc doesn't work yet.");
   }
@@ -17,7 +16,7 @@ exports.email = async function({
 
   conf = Object.assign(
     defaultConf,
-    web.plugins['oils-plugin-emailUtils'].conf,
+    web.plugins['oils-plugin-email-utils'].conf,
     conf, 
   );
 

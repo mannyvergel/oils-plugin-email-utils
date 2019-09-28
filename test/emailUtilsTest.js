@@ -10,11 +10,11 @@ const assert = require("assert");
 
 const conf = {
   baseDir: oilsPath,
-  secretPassphrase: "fk12r9012kr9faks9!!",
+  secretPassphrase: "fk12r9012kr9fakasfoiajsfijs9!!",
   plugins: {
-  'oils-plugin-emailUtils': {
+  'oils-plugin-email-utils': {
       enabled: true,
-      pluginPath: '/../oils-plugin-emailUtils',
+      pluginPath: '/../oils-plugin-email-utils',
 
 
       defaultFrom: 'manny@pesobility.com',
@@ -38,8 +38,12 @@ describe('app', function() {
 
   })
 
-  it('should properly execute', async function() {
+  it('should have web.emailUtils', async function() {
     assert(web.emailUtils, "web.emailUtils should exist");
+  })
+
+  it('should properly execute', async function() {
+    
     await web.emailUtils.email({
       to: ['manny@mvergel.com', 'manuel_igop@yahoo.com'],
       subj: 'Mocha Test Email',
