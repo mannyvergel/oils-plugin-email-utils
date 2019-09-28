@@ -1,0 +1,28 @@
+{
+  "name": "oils-plugin-email-utils",
+  "version": "4.0.0",
+  "description": "web.emailUtils",
+  "main": "EmailUtilsPlugin.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannyvergel/oils-plugin-email-utils.git"
+  },
+  "keywords": [
+    "email",
+    "plugin",
+    "oils"
+  ],
+  "author": "Manny Vergel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mannyvergel/oils-plugin-email-utils/issues"
+  },
+  "homepage": "https://github.com/mannyvergel/oils-plugin-email-utils#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}
